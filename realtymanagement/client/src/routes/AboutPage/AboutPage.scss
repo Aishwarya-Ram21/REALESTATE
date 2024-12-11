@@ -1,0 +1,67 @@
+.about {
+    height: 100vh; /* Ensure the container takes full viewport height */
+    display: flex;
+    overflow: auto; /* Add scrolling if content overflows */
+    
+    .textContainer {
+      flex: 3;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      margin-left: 0; /* Adjusted margin for alignment */
+      align-items: center; /* Align content to the left */
+      justify-content: center; /* Center content vertically */
+      margin-top: -5%;
+      margin-right: 2%;
+      
+
+  
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #333;
+        text-align: center; /* Center-align the heading */
+      }
+  
+    
+      p {
+        font-size: 1.4em;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        text-align: left; /* Left-align text paragraphs */
+        color: #555;
+      }
+  
+     
+      }
+  
+      a {
+        font-size: 1.2em;
+        color: teal;
+        text-decoration: underline;
+  
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  
+    .imgContainer {
+      flex: 2;
+      background-color: #fcf5f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       margin-left: -3%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+  

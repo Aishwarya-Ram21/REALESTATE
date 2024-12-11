@@ -1,0 +1,140 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f1f5f9; /* Light background for a fresh look */
+
+  .formContainer {
+    display: flex;
+    flex: 2;
+    width: 100%;
+    gap: 40px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White background for form section */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow effect for depth */
+
+    .textContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      border-right: 2px solid #e4e4e4;
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        text-align: left;
+      }
+
+      p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        color: #7f8c8d;
+        margin-bottom: 25px;
+      }
+
+      .contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        .formGroup {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s ease;
+          }
+
+          input:focus,
+          textarea:focus {
+            border-color: #3498db;
+          }
+
+          textarea {
+            height: 150px;
+            resize: vertical;
+          }
+        }
+
+        .btn-wrapper {
+          display: flex;
+          justify-content: center;
+
+          .submit-btn {
+            min-width: 250px;
+            height: 50px;
+            background-color: #3498db; /* Bright color for the button */
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 25px; /* Rounded edges for the button */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+          }
+
+          .submit-btn:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+          }
+        }
+      }
+    }
+
+    .imgContainer {
+      flex: 1;
+      background-color: #f7f7f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+
+    .MuiIconButton-root {
+      margin: 0 10px;
+      font-size: 35px;
+      transition: color 0.3s ease;
+    }
+
+    .MuiIconButton-root:hover {
+      color: #3498db; /* Blue color on hover */
+    }
+  }
+}
